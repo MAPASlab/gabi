@@ -9,7 +9,7 @@ r <- rast(file.path(biome_rast_dir, "Time_0_biome_array.tiff"))
 mask <- !is.na(r)
 
 if (!dir.exists("./out")) {
-  dir.create("./out", )
+  dir.create("./out")
 }
 writeRaster(mask, "./out/world_mask.tiff")
 
